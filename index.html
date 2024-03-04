@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dynamic Image Page</title>
+        <style>
+            body {
+                text-align: center;
+                margin: 20px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dynamic Image Page</h1>
+
+        <div id="imageContainer">
+            <!-- Images will be dynamically added here -->
+        </div>
+        <script>
+            // Get the query parameter from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const odysseyCode = urlParams.get("odyssey");
+
+            // Fetch the external JSON file
+            fetch("data.json")
+                .then((response) => response.json())
+                .then((imageData) => {
+                    // Check if the odyssey code exists in the JSON data
+                    const imageNameWithExtension = odysseyCode + ".png";
+
+                    if (imageData.hasOwnProperty(imageNameWithExtension)) {
+                        const imageUrl = imageData[imageNameWithExtension];
+
+                        // Create an image element and set its source
+                        const imgElement = document.createElement("img");
+                        imgElement.src = imageUrl;
+
+                        // Append the image element to the container
+                        document
+                            .getElementById("imageContainer")
+                            .appendChild(imgElement);
+                    } else {
+                        // Display an error message if the odyssey code is not found
+                        document.getElementById("imageContainer").innerHTML =
+                            "<p>Image not found</p>";
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error fetching JSON:", error);
+                    document.getElementById("imageContainer").innerHTML =
+                        "<p>Error fetching image data</p>";
+                });
+        </script>
+    </body>
+</html>
