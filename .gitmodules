@@ -1,0 +1,3 @@
+[submodule "data"]
+	path = data
+	url = https://github.com/SaiKiranMatta/verify24-data.git
