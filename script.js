@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (matchingEntry) {
                 // Update the text in the "name-element"
                 const nameElement = document.getElementById("name-element");
-                nameElement.textContent = `${matchingEntry.name} of ${matchingEntry.dept}`;
+                nameElement.textContent = `${matchingEntry.name} of ${matchingEntry.dept} Department`;
 
                 // Example: Update SVG content based on the matching entry
             } else {
