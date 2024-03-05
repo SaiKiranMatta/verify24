@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 const nameElement = document.getElementById("name-element");
                 nameElement.textContent = `${matchingEntry.name} of ${matchingEntry.dept} Department`;
 
+                const headerNameElement = document.getElementById(
+                    "header-name-element"
+                );
+                headerNameElement.textContent = `${matchingEntry.name} of ${matchingEntry.dept} Department`;
+
                 // Example: Update SVG content based on the matching entry
             } else {
                 // Handle the case where no matching entry is found
