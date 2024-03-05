@@ -1,5 +1,17 @@
-{
-    "O0003.png": "https://lh3.googleusercontent.com/drive-viewer/AKGpihZYbDK_-RQWcVSzO4mDTfcPUqK3kTUON0Mxxx75ibwxF12fG4p3hR2q1sxfHYv5w01gozOh1-CmTrRFLBzfGh3hlRDa=s1600",
-    "O0002.png": "verify24/data/O0002.png",
-    "O0001.png": "verify24/data/O0001.png"
-}
+[
+  {
+    "code": "saikiranO0001",
+    "name": "Sai Kiran",
+    "dept": "CSE"
+  },
+  {
+    "code": "sameekruthO0002",
+    "name": "Sameekruth",
+    "dept": "AIDS"
+  },
+  {
+    "code": "harshithO0003",
+    "name": "Harshith",
+    "dept": "AIML"
+  }
+]
