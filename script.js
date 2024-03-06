@@ -22,7 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
                 headerNameElement.textContent = `${matchingEntry.name} of ${matchingEntry.dept} Department`;
 
-                // Example: Update SVG content based on the matching entry
+                const qrContainer = document.getElementById("qr-container");
+
+                // Use qrcode library to generate the QR code
+                const qr = new QRCode(qrContainer, {
+                    text:
+                        "https://saikiranmatta.github.io/verify24/?odyssey=" +
+                        matchingEntry.code,
+                    width: 98,
+                    height: 98,
+                    typeNumber: 8,
+                    correctLevel: QRCode.CorrectLevel.H,
+                });
             } else {
                 // Handle the case where no matching entry is found
                 console.error(
