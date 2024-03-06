@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 headerNameElement.textContent = `${matchingEntry.name} of ${matchingEntry.dept} Department`;
 
                 const qrContainer = document.getElementById("qr-container");
+                console.log("Qr is being generated");
 
                 // Use qrcode library to generate the QR code
                 const qr = new QRCode(qrContainer, {
