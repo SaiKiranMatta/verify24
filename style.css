@@ -12,9 +12,6 @@
 }
 
 @media (max-width: 767px) {
-    #verification-svg {
-        width: 50%; /* Adjust as needed for smaller screens */
-    }
     .header {
         font-size: 0.8rem;
         line-height: 1.2rem;
