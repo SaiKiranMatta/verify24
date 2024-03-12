@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Parse the URL parameters
     const urlParams = new URLSearchParams(window.location.search);
-    const odysseyCode = urlParams.get("odyssey");
+    const odysseyCode = urlParams.get("id");
 
     // Fetch the JSON file
-    fetch("data.json")
+    fetch("../data.json")
         .then((response) => response.json())
         .then((jsonData) => {
             // Find the entry in the JSON data that matches the provided odyssey code
@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (matchingEntry) {
                 // Update the text in the "name-element"
+
+                const generalHeader = document.getElementById("general-header");
+                generalHeader.classList.add("hidden");
+
                 const nameElement = document.getElementById("name-element");
                 nameElement.textContent = `${matchingEntry.name} of ${matchingEntry.dept} Department`;
 
@@ -22,8 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
                 headerNameElement.textContent = `${matchingEntry.name} of ${matchingEntry.dept} Department`;
 
+                const certHeader = document.getElementById("cert-header");
+                const certificate = document.getElementById("certificate");
+
+                certHeader.classList.remove("hidden");
+                certificate.classList.remove("hidden");
+
                 const qrContainer = document.getElementById("qr-container");
-                console.log("Qr is being generated");
 
                 // Use qrcode library to generate the QR code
                 const qr = new QRCode(qrContainer, {
