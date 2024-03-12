@@ -1,32 +1,17 @@
 [
     {
-        "code": "dupativamshiDM0001",
-        "holder": "DUPATI VAMSHI of MECHANICAL Department",
+        "code": "mekalasreeneshreddyOM0001",
+        "holder": "Mekala Sreenesh Reddy of AIML Department",
         "position": "first"
     },
     {
-        "code": "punnamkotaDM0002",
-        "holder": "PUNNAM KOTA of IT Department",
-        "position": "first"
-    },
-    {
-        "code": "peddisailohithDM0003",
-        "holder": "Peddi Sai Lohith of CET Department",
+        "code": "owaisrafiqsiddiquiOM0002",
+        "holder": "Owais Rafiq Siddiqui of CET Department",
         "position": "second"
     },
     {
-        "code": "saisathvikDM0004",
-        "holder": "Sai Sathvik of CET Department",
-        "position": "second"
-    },
-    {
-        "code": "mohammadabdulmuqeetDM0005",
-        "holder": "Mohammad Abdul Muqeet of ECE Department",
-        "position": "third"
-    },
-    {
-        "code": "mohammedaumeralikhanDM0006",
-        "holder": "Mohammed Aumer Ali Khan of ECE Department",
+        "code": "tlakshmirohitOM0003",
+        "holder": "T. Lakshmi Rohit of AIML Department",
         "position": "third"
     }
 ]
