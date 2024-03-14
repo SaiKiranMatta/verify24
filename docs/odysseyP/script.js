@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     text:
                         "https://cbitosc.github.io/verify24/odysseyP/?id=" +
                         matchingEntry.code,
-                    width: 96,
-                    height: 96,
+                    width: 384,
+                    height: 384,
                     typeNumber: 8,
                     correctLevel: QRCode.CorrectLevel.H,
                 });
@@ -49,9 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // qrContainer.style.transform = "scale(" + scaleFactor + ")";
                 // qrContainer.style.transformOrigin = "top left";
-
-                qrContainer.style.width = "96px";
-                qrContainer.style.height = "96px";
+                qrContainer.classList.add("transform");
             } else {
                 console.error(
                     "No matching entry found for the provided odyssey code."
