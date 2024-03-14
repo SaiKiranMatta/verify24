@@ -39,16 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
                     text:
                         "https://cbitosc.github.io/verify24/odysseyP/?id=" +
                         matchingEntry.code,
-                    width: 384,
-                    height: 384,
+                    width: 96,
+                    height: 96,
                     typeNumber: 8,
                     correctLevel: QRCode.CorrectLevel.H,
                 });
 
-                const scaleFactor = 96 / 384;
+                // const scaleFactor = 96 / 384;
 
-                qrContainer.style.transform = "scale(" + scaleFactor + ")";
-                qrContainer.style.transformOrigin = "top left";
+                // qrContainer.style.transform = "scale(" + scaleFactor + ")";
+                // qrContainer.style.transformOrigin = "top left";
 
                 qrContainer.style.width = "96px";
                 qrContainer.style.height = "96px";
