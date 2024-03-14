@@ -36,14 +36,18 @@ body {
     }
 }
 
-.transform {
-    -webkit-transform: scale(0.25);
+.transform img {
+    /* -webkit-transform: scale(0.25);
     -webkit-transform-origin: top left;
     transform: scale(0.25);
-    transform-origin: top left;
+    transform-origin: top left; */
+    width: 100%;
+    max-width: 96px;
+    height: auto;
 }
 
-.image-container img {
+.image-container img,
+canvas {
     width: 100%;
     max-width: 96px;
     height: auto;
