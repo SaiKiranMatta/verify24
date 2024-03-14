@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // qrContainer.style.transform = "scale(" + scaleFactor + ")";
                 // qrContainer.style.transformOrigin = "top left";
-                qrContainer.classList.add("transform");
+                // qrContainer.classList.add("transform");
             } else {
                 console.error(
                     "No matching entry found for the provided odyssey code."

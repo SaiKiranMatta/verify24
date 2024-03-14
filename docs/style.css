@@ -4,7 +4,7 @@ body {
 
 @font-face {
     font-family: "Baskerville-old-face";
-    src: url("/assets/fonts/Baskerville-old-face.ttf") format("truetype");
+    src: url("../assests/fonts/BASKVILL.ttf") format("truetype");
     /* You can define additional properties such as font-weight, font-style, etc. */
 }
 
@@ -41,4 +41,10 @@ body {
     -webkit-transform-origin: top left;
     transform: scale(0.25);
     transform-origin: top left;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 96px;
+    height: auto;
 }
