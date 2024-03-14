@@ -4,7 +4,7 @@ body {
 
 @font-face {
     font-family: "Baskerville-old-face";
-    src: url("../assests/fonts/BASKVILL.ttf") format("truetype");
+    src: url("/assests/fonts/BASKVILL.ttf") format("truetype");
     /* You can define additional properties such as font-weight, font-style, etc. */
 }
 
