@@ -37,6 +37,8 @@ body {
 }
 
 .transform {
+    -webkit-transform: scale(0.25);
+    -webkit-transform-origin: top left;
     transform: scale(0.25);
     transform-origin: top left;
 }
