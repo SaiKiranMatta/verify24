@@ -1,3 +1,7 @@
+body {
+    max-width: 100%;
+}
+
 @font-face {
     font-family: "Baskerville-old-face";
     src: url("/assets/fonts/Baskerville-old-face.ttf") format("truetype");
